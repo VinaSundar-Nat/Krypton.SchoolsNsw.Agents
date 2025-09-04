@@ -1,0 +1,19 @@
+[project]
+name = "core-app"
+version = "1.0.0"
+description = "MCP Server Core Application"
+authors = [{name = "Vina", email = "vinasundar.kr@hotmail.com"}]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dspy>=3.0.2",
+    "fastmcp>=2.11.2",
+    "core-lib @ file:///Volumes/Code/Source/Repo/Krypton.SchoolsNsw.Agents/core-lib"
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
