@@ -10,7 +10,7 @@ env_configs = {
         'NEO4J_TRANSPORT': 'stdio',
         'NEO4J_DB': 'local_db',
         'API_ENDPOINT': 'localhost',
-        'MCP_TRANSPORT': 'http'
+        'MCP_TRANSPORT': 'streamable-http'
     },
     'development': {
         'NEO4J_URI': 'bolt://dev-db.example.com:7687',
@@ -19,7 +19,7 @@ env_configs = {
         'NEO4J_TRANSPORT': 'http',
         'NEO4J_DB': 'dev_db',
         'API_ENDPOINT': 'http://localhost:8000',
-        'MCP_TRANSPORT': 'http'
+        'MCP_TRANSPORT': 'streamable-http'
     },
     'production': {
         'NEO4J_URI': 'bolt://prod-db.example.com:7687',

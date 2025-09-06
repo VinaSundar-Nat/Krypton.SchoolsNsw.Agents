@@ -7,10 +7,10 @@ class BaseToolHandler(ABC):
 
     @property
     @abstractmethod
-    def tool_definition(self) -> Tool:
+    def tools(self) -> List[Tool]:
         """Return the Tool definition for this handler"""
         pass
-    
+   
     @abstractmethod
     async def execute(self, arguments: Dict[str, Any]) -> List[TextContent]:
         """Execute the tool with given arguments"""
